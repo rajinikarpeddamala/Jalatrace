@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #12343b;
+    background: white;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: white;
+
+    border-bottom: 1px solid #e5eeee;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #087f8c;
+}
+
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #34545a;
+    font-size: 15px;
+}
+
+
+nav a:hover {
+    color: #087f8c;
+}
+
+
+.login-button {
+    border: none;
+    background: #087f8c;
+    color: white;
+
+    padding: 10px 22px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 10%;
+
+    background:
+        linear-gradient(
+            120deg,
+            #e9fafa,
+            #ffffff
+        );
+}
+
+
+.hero-content {
+    max-width: 700px;
+}
+
+
+.tagline {
+    color: #087f8c;
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.05;
+
+    color: #12343b;
+
+    margin-bottom: 25px;
+}
+
+
+.hero-text {
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    color: #547176;
+
+    max-width: 620px;
+
+    margin-bottom: 35px;
+}
+
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+.primary-button,
+.secondary-button {
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+.primary-button {
+    border: none;
+
+    background: #087f8c;
+
+    color: white;
+}
+
+
+.secondary-button {
+    background: white;
+
+    color: #087f8c;
+
+    border: 1px solid #087f8c;
+}
+
+
+/* SECTIONS */
+
+.section {
+    padding: 90px 8%;
+}
+
+
+.light-section {
+    background: #f4fafb;
+}
+
+
+.section-heading {
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: auto;
+
+    margin-bottom: 50px;
+}
+
+
+.small-title {
+    color: #087f8c;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.section-heading h2 {
+    font-size: 38px;
+
+    margin-bottom: 20px;
+
+    color: #12343b;
+}
+
+
+.section-heading p {
+    line-height: 1.7;
+
+    color: #60777b;
+}
+
+
+/* PARAMETER CARDS */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 22px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+.card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.10);
+}
+
+
+.icon {
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+
+.card h3 {
+    margin-bottom: 10px;
+
+    color: #12343b;
+}
+
+
+.card p {
+    color: #6a8084;
+
+    line-height: 1.6;
+}
+
+
+/* FEATURES */
+
+.feature-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 25px;
+}
+
+
+.feature {
+    padding: 30px;
+
+    border: 1px solid #dcebed;
+
+    border-radius: 12px;
+}
+
+
+.feature h3 {
+    margin-bottom: 12px;
+
+    color: #087f8c;
+}
+
+
+.feature p {
+    color: #60777b;
+
+    line-height: 1.6;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #12343b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+
+footer p {
+    margin-top: 8px;
+
+    color: #b7ced1;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        padding: 0 4%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 70px 6%;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-text {
+        font-size: 17px;
+    }
+
+}
